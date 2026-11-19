@@ -1,0 +1,21 @@
+.footer {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 24px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

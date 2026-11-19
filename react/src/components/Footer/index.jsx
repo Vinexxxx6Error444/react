@@ -1,10 +1,12 @@
 import './styles.css'
 
+const currentYear = new Date().getFullYear()
+
 export default function Footer() {
     return (
-        <Footer>
-            <p>&copy; {new Date().getFullYear()} - Todos os direitos reservados</p>
-            <p>Senai - Bahia</p>
-        </Footer>
+        <footer className="footer">
+            <p>Contabilidade Simples</p>
+            <p>&copy; {currentYear} · SENAI Bahia</p>
+        </footer>
     )
 }
